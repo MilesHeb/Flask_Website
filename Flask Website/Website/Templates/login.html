@@ -1,42 +1,61 @@
 {% extends "base.html" %} {% block title %} Login {% endblock %} {%block
 homePage%}
 <form method="POST">
+  <br />
+  <br />
+  <br />
   <h3 align="center">Login to LCTMC</h3>
   <br />
-  <br />
   <div align="center">
-    <div class="form-group">
-      <label for="email">Email Address: </label>
-      <input
-        type="email"
-        class="formc-control"
-        id="email"
-        name="email"
-        placeholder="Enter Email Here"
-      />
-    </div>
-    <div class="form-group">
-      <label for="firstName">First Name: </label>
-      <input
-        type="text"
-        class="formc-control"
-        id="firstName"
-        name="firstName"
-        placeholder="Enter First Name Here"
-      />
-    </div>
-    <div class="form-group">
-      <label for="password">Password: </label>
-      <input
-        type="password"
-        class="formc-control"
-        id="password"
-        name="password"
-        placeholder="Enter Password"
-      />
+    <div align="center" class="w-50 p-3 rounded" style="background-color: #eee">
+      <div class="input-group input-group-lg">
+        <label for="email"></label>
+        <span class="input-group-text" id="inputGroup-sizing-lg">Email</span>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+          type="email"
+          class="formc-control"
+          id="email"
+          name="email"
+        />
+      </div>
+      <br />
+      <div class="input-group input-group-lg">
+        <label for="firstName"></label>
+        <span class="input-group-text" id="inputGroup-sizing-lg"
+          >First Name</span
+        >
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+          id="firstName"
+          name="firstName"
+        />
+      </div>
+      <br />
+      <div class="input-group input-group-lg">
+        <label for="password"></label>
+        <!-- <span class="input-group-text" id="inputGroup-sizing-lg">Password</span> -->
+        <input
+          type="password"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+          id="password"
+          name="password"
+          placeholder="Password"
+        />
+      </div>
+      <br />
+      <br />
+      <button class="btn btn-primary w-50 p-3 fs-3" type="submit">Login</button>
     </div>
   </div>
   <br />
-  <button type="submit" class="btn btn-primary">Login</button>
 </form>
 {{text}} {% if boolean == True %} {% endif %} {% endblock%}
